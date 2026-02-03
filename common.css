@@ -23,6 +23,10 @@ body {
     display: inline-block;
 }
 
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
 .lang-btn {
     background-color: #fff;
     color: #333;
@@ -181,8 +185,18 @@ footer {
         display: none;
     }
     
+    /* Hide KALYNK_AN TUỆ text on mobile */
     header div:first-child {
-        font-size: 1em !important;
+        display: none;
+    }
+    
+    /* Make section title larger (1.5x) */
+    #kham-pha h2 {
+        font-size: 1.5em !important;
+    }
+    
+    #kham-pha small {
+        font-size: 1.2em !important;
     }
     
     footer {
@@ -449,8 +463,18 @@ a.back:hover {
         padding: 0.5em;
     }
     
+    /* Hide KALYNK_AN TUỆ text on mobile */
     header div:first-child {
-        font-size: 1em !important;
+        display: none;
+    }
+    
+    /* Make section title larger (1.5x) */
+    #kham-pha h2 {
+        font-size: 1.5em !important;
+    }
+    
+    #kham-pha small {
+        font-size: 1.2em !important;
     }
     
     .buttons {
