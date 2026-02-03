@@ -377,3 +377,270 @@ a.back:hover {
 .radial-mindmap a:hover {
     text-decoration: underline;
 }
+
+/* ================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ================================ */
+
+/* Mobile styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        background-size: auto;
+    }
+    
+    header {
+        padding: 0.5em;
+    }
+    
+    header div:first-child {
+        font-size: 1.5em !important;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 0.3em;
+    }
+    
+    .button {
+        padding: 0.4em 0.8em;
+        font-size: 0.9em;
+    }
+    
+    section {
+        padding: 1em;
+        margin: 0.5em;
+        width: auto !important;
+        max-width: none !important;
+    }
+    
+    .buttons {
+        margin-top: 10px;
+    }
+    
+    section h2 {
+        font-size: 1em;
+    }
+    
+    section p {
+        font-size: 0.85em;
+        line-height: 1.4;
+    }
+    
+    img {
+        max-width: 100%;
+        margin: 0.5em 0;
+    }
+    
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .albums {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .flow-mindmap {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    .flow-mindmap .center {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .flow-mindmap .branches {
+        width: 100%;
+    }
+    
+    .flow-mindmap .branch {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .flow-mindmap .arrow {
+        display: none;
+    }
+    
+    .flow-mindmap .node {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .flow-mindmap .sub-branches {
+        margin-left: 10px;
+    }
+    
+    .mindmap {
+        flex-direction: column;
+    }
+    
+    .mindmap .root {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mindmap .root:after {
+        display: none;
+    }
+    
+    .mindmap .branch {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .mindmap .node:before {
+        display: none;
+    }
+    
+    .radial-mindmap .branches {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .radial-mindmap .branch {
+        margin: 10px 0;
+        width: 80%;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #video-reviews {
+        padding: 20px 10px;
+    }
+    
+    #video-reviews div[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    #video-reviews div[style*="flex: 1"] {
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    #video-reviews blockquote {
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    #video-reviews p {
+        font-size: 0.85em;
+        padding: 0 10px;
+    }
+    
+    .dropdown-content {
+        min-width: 120px;
+    }
+    
+    .dropdown-content a {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Tablet styles (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    header div:first-child {
+        font-size: 2em !important;
+    }
+    
+    .buttons {
+        flex-wrap: wrap;
+        gap: 0.4em;
+    }
+    
+    .button {
+        flex: 1 1 45%;
+        font-size: 0.95em;
+    }
+    
+    section {
+        padding: 1.5em;
+        margin: 0.8em;
+    }
+    
+    img {
+        max-width: 200px;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+    }
+    
+    .albums {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .flow-mindmap {
+        flex-wrap: wrap;
+    }
+    
+    .flow-mindmap .branches {
+        width: 100%;
+    }
+    
+    #video-reviews div[style*="display: flex"] {
+        gap: 20px !important;
+    }
+    
+    #video-reviews div[style*="flex: 1"] {
+        min-width: 45% !important;
+    }
+}
+
+/* Desktop styles (769px and above) */
+@media screen and (min-width: 769px) {
+    .buttons {
+        flex-wrap: nowrap;
+    }
+    
+    .button {
+        flex: 1;
+    }
+    
+    section {
+        max-width: 800px;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+    }
+    
+    .albums {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large desktop styles (1200px and above) */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    
+    section {
+        max-width: 1000px;
+    }
+    
+    img {
+        max-width: 300px;
+    }
+}
