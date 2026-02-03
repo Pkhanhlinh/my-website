@@ -153,6 +153,29 @@ document.addEventListener('DOMContentLoaded', function() {
     if (activeLink) {
         activeLink.classList.add('active');
     }
+
+    // Add mobile bottom navigation bar
+    const footer = document.querySelector('footer');
+    if (footer) {
+        const mobileNav = document.createElement('div');
+        mobileNav.className = 'mobile-bottom-nav';
+        mobileNav.innerHTML = `
+            <div class="nav-buttons">
+                <a href="index.html" class="button" data-i18n="home">Home</a>
+                <a href="homestay.html" class="button" data-i18n="homestay">Homestay Om.vibe</a>
+                <a href="healing.html" class="button" data-i18n="healing">Healing</a>
+                <a href="villa.html" class="button" data-i18n="villa">Flamingo</a>
+                <a href="healthy.html" class="button" data-i18n="healthy">Healthy</a>
+            </div>
+        `;
+        footer.parentNode.insertBefore(mobileNav, footer);
+        
+        // Set active class on mobile bottom nav
+        const mobileActiveLink = mobileNav.querySelector(`a[href="${currentPage}"]`);
+        if (mobileActiveLink) {
+            mobileActiveLink.classList.add('active');
+        }
+    }
 });
 
 // Make changeLanguage available globally
