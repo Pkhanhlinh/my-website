@@ -1,7 +1,7 @@
 // Language translations (excluding proper nouns: Kalynk An Tuệ, Om.Vibe, Flamingo Đại Lải)
 const translations = {
     vi: {
-        // Navigation buttons
+        // Navigation buttons (header - short form)
         home: "Home",
         homestay: "Homestay",
         healing: "Healing",
@@ -10,15 +10,19 @@ const translations = {
         // Section titles and content
         kham_pha_title: "Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
-        // Button titles and subtitles
+        // Button titles and subtitles (swapped)
         homestay_title: "OM.VIBE RETREAT MIEU LAKE",
         homestay_subtitle: "Homestay cho Thân - Tâm - Trí",
+        homestay_skip: "",
         healing_title: "THIỀN THỤ ĐỘNG",
         healing_subtitle: "Bằng Âm Thanh Chữa Lành",
+        healing_skip: "",
         villa_title: "BOOKING VILLA FLAMINGO",
         villa_subtitle: "Chính Chủ",
+        villa_skip: "",
         healthy_title: "Trị liệu",
         healthy_subtitle: "cơ thể",
+        healthy_skip: "",
         // Social media
         facebook: "Facebook",
         instagram: "Instagram",
