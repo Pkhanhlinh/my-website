@@ -10,11 +10,72 @@ body {
     text-align: center;
 }
 
+/* Language Switcher Styles */
+#language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 7px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1001;
+    margin-top: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End Language Switcher Styles */
+
 header {
     background-color: #4CAF50;
     color: white;
     padding: 1em;
     margin: 0.1em 0;
+    position: relative;
 }
 
 video {
