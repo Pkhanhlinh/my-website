@@ -1,0 +1,9 @@
+name = "kalynk-an-tue"
+compatibility_date = "2024-01-01"
+
+# Cloudflare Pages configuration
+[build]
+command = ""  # Empty for static site - no build process needed
+
+[site]
+bucket = "."  # Deploy all files from root directory
