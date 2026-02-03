@@ -209,6 +209,11 @@ footer {
         display: none;
     }
     
+    /* Hide navigation buttons in header on mobile */
+    header .buttons {
+        display: none;
+    }
+    
     /* Language switcher in #kham-pha section */
     #language-switcher {
         position: relative;
