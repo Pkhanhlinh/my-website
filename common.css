@@ -182,7 +182,7 @@ footer {
     }
     
     header div:first-child {
-        font-size: 1.2em !important;
+        font-size: 1em !important;
     }
     
     footer {
@@ -442,7 +442,7 @@ a.back:hover {
 @media screen and (max-width: 480px) {
     body {
         font-size: 14px;
-        background-size: auto;
+        background-size: 100% 100%;
     }
     
     header {
@@ -450,7 +450,7 @@ a.back:hover {
     }
     
     header div:first-child {
-        font-size: 1.5em !important;
+        font-size: 1em !important;
     }
     
     .buttons {
