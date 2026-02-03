@@ -399,12 +399,15 @@ a.back:hover {
     
     .buttons {
         flex-direction: column;
-        gap: 0.3em;
+        gap: 0.5em;
+        padding: 0 10px;
     }
     
     .button {
-        padding: 0.4em 0.8em;
-        font-size: 0.9em;
+        padding: 0.8em 1em;
+        font-size: 0.95em;
+        white-space: normal;
+        line-height: 1.4;
     }
     
     section {
@@ -551,6 +554,23 @@ a.back:hover {
         padding: 8px 10px;
         font-size: 11px;
     }
+    
+    /* Founder section mobile styles */
+    #founder {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    #founder div {
+        min-width: 100% !important;
+        padding-left: 0 !important;
+        padding: 15px !important;
+    }
+    
+    #founder blockquote {
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
 }
 
 /* Tablet styles (481px to 768px) */
@@ -615,6 +635,7 @@ a.back:hover {
     
     .button {
         flex: 1;
+        white-space: nowrap;
     }
     
     section {
