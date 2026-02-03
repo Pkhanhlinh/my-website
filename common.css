@@ -211,7 +211,7 @@ footer {
     
     /* Hide navigation buttons in header on mobile */
     header .buttons {
-        display: none;
+        display: none !important;
     }
     
     /* Language switcher in #kham-pha section */
