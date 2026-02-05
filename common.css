@@ -943,6 +943,11 @@ a.back:hover {
             min-width: 375px !important;
         }
     }
+    
+    /* Hide desktop OM.VIBE RETREAT text on mobile */
+    .desktop-omvibe {
+        display: none;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
