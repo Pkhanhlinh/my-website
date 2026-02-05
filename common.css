@@ -621,11 +621,15 @@ a.back:hover {
         line-height: 1.4;
     }
     
+    /* Center all images on mobile */
     img {
         max-width: 100%;
-        margin: 0.5em 0;
+        margin: 0.5em auto;
+        display: block;
+        text-align: center;
     }
     
+    /* Center gallery images */
     .gallery {
         flex-direction: column;
         align-items: center;
@@ -634,6 +638,32 @@ a.back:hover {
     .gallery img {
         width: 100%;
         max-width: 100%;
+    }
+    
+    /* Center text content in sections */
+    section {
+        text-align: center !important;
+    }
+    
+    section h2 {
+        text-align: center !important;
+    }
+    
+    section p {
+        text-align: center !important;
+    }
+    
+    /* Center content in kham-pha section */
+    #kham-pha {
+        text-align: center !important;
+    }
+    
+    #kham-pha h2 {
+        text-align: center !important;
+    }
+    
+    #kham-pha p {
+        text-align: center !important;
     }
     
     .albums {
@@ -723,13 +753,15 @@ a.back:hover {
     }
     
     #video-reviews div[style*="flex: 1"] {
-        max-width: 100% !important;
-        min-width: 100% !important;
+        max-width: 375px !important;
+        min-width: 375px !important;
+        width: 375px !important;
     }
     
     #video-reviews blockquote {
-        max-width: 100% !important;
-        min-width: 100% !important;
+        max-width: 375px !important;
+        min-width: 375px !important;
+        width: 375px !important;
     }
     
     #video-reviews p {
@@ -772,9 +804,141 @@ a.back:hover {
     #founder p {
         text-align: center !important;
     }
+    
+    /* Album section - center album content */
+    #album h2 {
+        text-align: center !important;
+    }
+    
+    #album p {
+        text-align: center !important;
+    }
+    
+    /* Healing content section */
+    #healing-content {
+        text-align: center !important;
+    }
+    
+    #healing-content h2 {
+        text-align: center !important;
+    }
+    
+    #healing-content p {
+        text-align: center !important;
+    }
+    
+    /* Gioi thieu section */
+    #gioi-thieu {
+        text-align: center !important;
+    }
+    
+    #gioi-thieu h2 {
+        text-align: center !important;
+    }
+    
+    #gioi-thieu p {
+        text-align: center !important;
+    }
+    
+    /* Hinh anh section */
+    #hinh-anh h2 {
+        text-align: center !important;
+    }
+    
+    /* Center all inline images not in gallery */
+    section img:not(.gallery img) {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+    }
+    
+    /* Mindmap centering */
+    .mindmap .node {
+        text-align: center !important;
+    }
+    
+    .flow-mindmap .node {
+        text-align: center !important;
+    }
+    
+    .radial-mindmap .center {
+        text-align: center !important;
+    }
+    
+    .radial-mindmap .branch {
+        text-align: center !important;
+    }
+    
+    /* Video reviews - Center videos on mobile */
+    #video-reviews > h2 {
+        text-align: center !important;
+    }
+    
+    #video-reviews > div {
+        justify-content: center !important;
+    }
+    
+    #video-reviews > div > div {
+        margin: 0 auto 20px auto !important;
+        text-align: center !important;
+        float: none !important;
+        flex: none !important;
+        width: 375px !important;
+        max-width: 375px !important;
+        min-width: 375px !important;
+    }
+    
+    /* Instagram media centering */
+    #video-reviews .instagram-media {
+        margin: 0 auto !important;
+        float: none !important;
+        display: block !important;
+        width: 375px !important;
+        max-width: 375px !important;
+    }
+    
+    #video-reviews .instagram-media-fallback {
+        margin: 0 auto !important;
+        float: none !important;
+        display: block !important;
+        width: 375px !important;
+        max-width: 375px !important;
+    }
+    
+    #video-reviews p {
+        font-size: 0.85em;
+        padding: 0 10px;
+        text-align: center !important;
+    }
+    
+    /* Instagram embed iframes and fallbacks */
+    #video-reviews iframe {
+        width: 375px !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    
+    #video-reviews blockquote {
+        width: 375px !important;
+        max-width: 375px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Force stacking and centering on mobile */
+    @media screen and (max-width: 600px) {
+        #video-reviews > div {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        
+        #video-reviews > div > div {
+            max-width: 375px !important;
+            width: 375px !important;
+            min-width: 375px !important;
+        }
+    }
 }
-
-/* Tablet styles (481px to 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
         font-size: 15px;
