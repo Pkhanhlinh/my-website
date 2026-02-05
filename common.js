@@ -5,17 +5,17 @@ const translations = {
         home: "Owner",
         homestay: "Homestay",
         healing: "Healing",
-        villa: "Flamingo",
+        villa: "Flamingo Resort",
         healthy: "Healthy",
         // Main content
         kham_pha_title: "Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
         homestay_title: "OM.VIBE RETREAT MIEU LAKE",
-        homestay_subtitle: "Homestay cho Thân - Tâm - Trí",
+        homestay_subtitle: "Homestay Hồ Miễu - Thân - Tâm - Trí",
         healing_title: "THIỀN THỤ ĐỘNG",
         healing_subtitle: "Bằng Âm Thanh Chữa Lành",
-        villa_title: "BOOKING VILLA FLAMINGO",
-        villa_subtitle: "Chính Chủ",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "Booking Villa Chính Chủ",
         healthy_title: "Trị liệu",
         healthy_subtitle: "cơ thể",
         facebook: "Facebook",
@@ -31,16 +31,16 @@ const translations = {
         home: "Home",
         homestay: "Homestay",
         healing: "Healing",
-        villa: "Flamingo",
+        villa: "Flamingo Resort",
         healthy: "Healthy",
         kham_pha_title: "Areas Kalynk An Tuệ can connect with you",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
         homestay_title: "OM.VIBE RETREAT MIEU LAKE",
-        homestay_subtitle: "Homestay for Body - Mind - Spirit",
+        homestay_subtitle: "Homestay Hồ Miễu - Body - Mind - Spirit",
         healing_title: "ACTIVE MEDITATION",
         healing_subtitle: "With Healing Sounds",
-        villa_title: "BOOKING VILLA FLAMINGO",
-        villa_subtitle: "Direct from Owner",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "Direct Booking",
         healthy_title: "Therapy",
         healthy_subtitle: "for body",
         facebook: "Facebook",
@@ -55,16 +55,16 @@ const translations = {
         home: "Accueil",
         homestay: "Homestay",
         healing: "Guérison",
-        villa: "Flamingo",
+        villa: "Flamingo Resort",
         healthy: "Santé",
         kham_pha_title: "Domaines où Kalynk An Tuệ peut vous connecter",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
         homestay_title: "OM.VIBE RETREAT MIEU LAKE",
-        homestay_subtitle: "Homestay pour Corps - Esprit - Âme",
+        homestay_subtitle: "Homestay Hồ Miễu - Corps - Esprit - Âme",
         healing_title: "MÉDITATION ACTIVE",
         healing_subtitle: "Avec des Sons Guérisseurs",
-        villa_title: "RÉSERVATION VILLA FLAMINGO",
-        villa_subtitle: "Propriétaire",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "Réservation Directe",
         healthy_title: "Thérapie",
         healthy_subtitle: "du corps",
         facebook: "Facebook",
@@ -79,7 +79,7 @@ const translations = {
         home: "ホーム",
         homestay: "ホームステー",
         healing: "メロディ",
-        villa: "フラミンゴ",
+        villa: "Flamingo Resort",
         healthy: "ヘルス",
         kham_pha_title: "Kalynk An Tuệが皆さんと繋がる分野",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
@@ -87,8 +87,8 @@ const translations = {
         homestay_subtitle: "ホームステー - 体・心・魂",
         healing_title: "能動的瞑想",
         healing_subtitle: "癒しの音で",
-        villa_title: "ヴィラ フラミンゴ ご予約",
-        villa_subtitle: "オーナー直営",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "直接予約",
         healthy_title: "セラピー",
         healthy_subtitle: "ボディ",
         facebook: "Facebook",
@@ -103,7 +103,7 @@ const translations = {
         home: "홈",
         homestay: "홈스테이",
         healing: "힐링",
-        villa: "플라밍고",
+        villa: "Flamingo Resort",
         healthy: "헬스",
         kham_pha_title: "Kalynk An Tuệ가 여러분과 연결될 수 있는 분야",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
@@ -111,8 +111,8 @@ const translations = {
         homestay_subtitle: "홈스테이 - 몸, 마음, 영혼",
         healing_title: "능동적 명상",
         healing_subtitle: "치유 음성으로",
-        villa_title: "플라밍고 빌라 예약",
-        villa_subtitle: "소유자 직영",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "직접 예약",
         healthy_title: "치료",
         healthy_subtitle: "신체",
         facebook: "Facebook",
@@ -127,7 +127,7 @@ const translations = {
         home: "首页",
         homestay: "民宿",
         healing: "疗愈",
-        villa: "弗拉明戈",
+        villa: "Flamingo Resort",
         healthy: "健康",
         kham_pha_title: "Kalynk An Tuệ可以与您连接的领域",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
@@ -135,8 +135,8 @@ const translations = {
         homestay_subtitle: "民宿 - 身心灵",
         healing_title: "主动冥想",
         healing_subtitle: "用疗愈的声音",
-        villa_title: "弗拉明戈别墅预订",
-        villa_subtitle: "业主直营",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "直接预订",
         healthy_title: "治疗",
         healthy_subtitle: "身体",
         facebook: "Facebook",
@@ -151,7 +151,7 @@ const translations = {
         home: "Главная",
         homestay: "Гостевой дом",
         healing: "Исцеление",
-        villa: "Фламинго",
+        villa: "Flamingo Resort",
         healthy: "Здоровье",
         kham_pha_title: "Области, где Kalynk An Tuệ может с вами связаться",
         contact_info: "(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)",
@@ -159,8 +159,8 @@ const translations = {
         homestay_subtitle: "Гостевой дом - Тело - Разум - Душа",
         healing_title: "АКТИВНАЯ МЕДИТАЦИЯ",
         healing_subtitle: "С Исцеляющими Звуками",
-        villa_title: "БРОНИРОВАНИЕ ВИЛЛЫ ФЛАМИНГО",
-        villa_subtitle: "От Владельца",
+        villa_title: "FLAMINGO RESORT",
+        villa_subtitle: "Прямое Бронирование",
         healthy_title: "Терапия",
         healthy_subtitle: "тела",
         facebook: "Facebook",
@@ -260,6 +260,8 @@ document.addEventListener('click', function(event) {
 document.addEventListener('DOMContentLoaded', function() {
     // Add header content with navigation buttons
     const headerPlaceholder = document.getElementById('header-placeholder');
+    const existingMobileHeader = document.getElementById('mobile-header');
+    
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = `
 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -271,12 +273,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="villa.html" class="button" data-i18n="villa">Flamingo</a>
         <a href="healthy.html" class="button" data-i18n="healthy">Healthy</a>
     </div>
-</div>
-
-<!-- Mobile Header with Language Switcher -->
-<div id="mobile-header" style="display: none; justify-content: space-between; align-items: center; padding: 5px 10px;">
-    <div class="language-switcher-mobile"></div>
-    <div style="font-size: 1.2em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white;">KALYNK_AN TUỆ</div>
 </div>
 `;
     }
@@ -311,10 +307,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         
-        // On mobile, insert language switcher into mobile-header; on desktop, insert in header
-        if (window.innerWidth <= 600) {
-            const mobileHeader = document.getElementById('mobile-header');
-            const langMobile = mobileHeader.querySelector('.language-switcher-mobile');
+        // On mobile, insert language switcher into existing mobile-header
+        if (window.innerWidth <= 600 && existingMobileHeader) {
+            const langMobile = existingMobileHeader.querySelector('.language-switcher-mobile');
             if (langMobile) {
                 langMobile.appendChild(langSwitcher);
             }
@@ -339,6 +334,38 @@ document.addEventListener('DOMContentLoaded', function() {
 // Make functions available globally
 window.changeLanguage = changeLanguage;
 window.toggleLanguageDropdown = toggleLanguageDropdown;
+
+// Simple toggle between EN and VI for mobile button
+function toggleLanguage() {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'vi';
+    const newLang = currentLang === 'vi' ? 'en' : 'vi';
+    changeLanguage(newLang);
+    
+    // Update button text
+    const langBtn = document.getElementById('lang-toggle-mobile');
+    if (langBtn) {
+        const langText = langBtn.querySelector('.lang-text');
+        if (langText) {
+            langText.textContent = newLang === 'vi' ? 'VI' : 'EN';
+        }
+        if (newLang === 'vi') {
+            langBtn.classList.add('vi');
+        } else {
+            langBtn.classList.remove('vi');
+        }
+    }
+    
+    // Also update the header button if exists
+    const headerBtn = document.getElementById('lang-toggle');
+    if (headerBtn) {
+        const headerLangText = headerBtn.querySelector('.lang-text');
+        if (headerLangText) {
+            headerLangText.textContent = newLang === 'vi' ? 'VI' : 'EN';
+        }
+    }
+}
+
+window.toggleLanguage = toggleLanguage;
 
 // Instagram Embed Fix - Handle failed embeds
 function fixInstagramEmbeds() {
