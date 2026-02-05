@@ -211,13 +211,13 @@ footer {
         display: none;
     }
     
-    /* Hide KALYNK_AN TUỆ text on mobile */
-    header div:first-child {
+    /* Hide KALYNK_AN TUỆ text on mobile - now using mobile header instead */
+    header > div:first-child {
         display: none;
     }
     
     /* Show mobile header on mobile */
-    header #mobile-header {
+    #mobile-header {
         display: flex !important;
     }
     
@@ -542,9 +542,14 @@ a.back:hover {
         padding: 0.5em;
     }
     
-    /* Hide KALYNK_AN TUỆ text on mobile */
-    header div:first-child {
+    /* Hide original KALYNK_AN TUỆ text on mobile - now using mobile header instead */
+    header > div:first-child {
         display: none;
+    }
+    
+    /* Show mobile header */
+    #mobile-header {
+        display: flex !important;
     }
     
     /* Language switcher in #kham-pha section */

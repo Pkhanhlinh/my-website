@@ -14,6 +14,12 @@
     </button>
 </div>
 
+<!-- Mobile Header - KALYNK_AN TUỆ at top left -->
+<div id="mobile-header" style="display: none; justify-content: flex-start; align-items: center; padding: 5px 10px; background-color: #4CAF50;">
+    <div style="font-size: 1.5em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white; height: 15px; line-height: 15px;">KALYNK_AN TUỆ</div>
+    <div class="language-switcher-mobile" style="margin-left: auto;"></div>
+</div>
+
 <style>
 /* Language Toggle Button - Hidden by default (desktop) */
 .lang-btn {
@@ -63,6 +69,16 @@
     .lang-btn {
         font-size: 12px;
         padding: 6px 12px;
+    }
+    
+    /* Show mobile header */
+    #mobile-header {
+        display: flex !important;
+    }
+    
+    /* Hide original header on mobile */
+    #header-placeholder {
+        display: none;
     }
 }
 </style>
