@@ -866,3 +866,62 @@ a.back:hover {
         max-width: 300px;
     }
 }
+
+/* Instagram Embed Fallback Styles */
+.instagram-media-fallback {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+}
+
+.instagram-media-fallback .video-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.instagram-media-fallback p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.instagram-media-fallback a {
+    display: inline-block;
+    background: white;
+    color: #667eea;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.instagram-media-fallback a:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Mobile responsive for Instagram fallback */
+@media screen and (max-width: 480px) {
+    .instagram-media-fallback {
+        padding: 20px 15px;
+    }
+    
+    .instagram-media-fallback .video-icon {
+        font-size: 36px;
+    }
+    
+    .instagram-media-fallback p {
+        font-size: 14px;
+    }
+    
+    .instagram-media-fallback a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

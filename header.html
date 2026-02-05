@@ -1,10 +1,103 @@
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; justify-content: space-between; align-items: center; position: relative;">
     <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase;">KALYNK_AN TUỆ</div>
     <div class="nav-buttons">
-        <a href="index.html" class="button">Home</a>
+        <a href="index.html" class="button">Owner</a>
         <a href="homestay.html" class="button">Homestay Om.vibe</a>
         <a href="healing.html" class="button">Healing</a>
         <a href="villa.html" class="button">Flamingo</a>
         <a href="healthy.html" class="button">Healthy</a>
     </div>
+    <!-- Language Toggle Button - Mobile Only -->
+    <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text">EN</span>
+    </button>
 </div>
+
+<style>
+/* Language Toggle Button - Hidden by default (desktop) */
+.lang-btn {
+    display: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.6);
+}
+
+.lang-icon {
+    font-size: 16px;
+}
+
+/* Vietnamese active state */
+.lang-btn.vi .lang-text {
+    color: #ffd700;
+}
+
+/* Mobile Interface (≤ 767px) - Show language button */
+@media (max-width: 767px) {
+    .lang-btn {
+        display: flex;
+    }
+    
+    .nav-buttons {
+        display: none;
+    }
+    
+    .lang-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+</style>
+
+<script>
+let currentLang = 'en';
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'vi' : 'en';
+    const btn = document.getElementById('lang-toggle');
+    const langText = btn.querySelector('.lang-text');
+    
+    if (currentLang === 'vi') {
+        langText.textContent = 'VI';
+        btn.classList.add('vi');
+    } else {
+        langText.textContent = 'EN';
+        btn.classList.remove('vi');
+    }
+    
+    // Store language preference
+    localStorage.setItem('preferredLanguage', currentLang);
+}
+
+// Load saved language preference
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+        currentLang = savedLang;
+        const btn = document.getElementById('lang-toggle');
+        const langText = btn.querySelector('.lang-text');
+        if (currentLang === 'vi') {
+            langText.textContent = 'VI';
+            btn.classList.add('vi');
+        }
+    }
+});
+</script>

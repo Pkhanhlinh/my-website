@@ -2,7 +2,7 @@
 const translations = {
     vi: {
         // Navigation
-        home: "Home",
+        home: "Owner",
         homestay: "Homestay",
         healing: "Healing",
         villa: "Flamingo",
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase;">KALYNK_AN TUỆ</div>
     <div class="nav-buttons">
-        <a href="index.html" class="button" data-i18n="home">Home</a>
+        <a href="index.html" class="button" data-i18n="home">Owner</a>
         <a href="homestay.html" class="button" data-i18n="homestay">Homestay</a>
         <a href="healing.html" class="button" data-i18n="healing">Healing</a>
         <a href="villa.html" class="button" data-i18n="villa">Flamingo</a>
@@ -339,3 +339,38 @@ document.addEventListener('DOMContentLoaded', function() {
 // Make functions available globally
 window.changeLanguage = changeLanguage;
 window.toggleLanguageDropdown = toggleLanguageDropdown;
+
+// Instagram Embed Fix - Handle failed embeds
+function fixInstagramEmbeds() {
+    const instagramEmbeds = document.querySelectorAll('.instagram-media');
+    
+    instagramEmbeds.forEach((embed) => {
+        // Check if embed failed to load (has placeholder SVG content)
+        const placeholder = embed.querySelector('svg');
+        const loadingText = embed.querySelector('[style*="color:#3897f0"]');
+        
+        // If we see placeholder content, it's not loaded properly
+        if (placeholder || (embed.innerHTML.includes('instagram') && embed.innerHTML.length < 500)) {
+            const permalink = embed.getAttribute('data-instgrm-permalink');
+            if (permalink) {
+                // Create fallback display
+                embed.innerHTML = `
+                    <div class="instagram-media-fallback">
+                        <span class="video-icon">🎬</span>
+                        <p>Video từ Instagram</p>
+                        <a href="${permalink}" target="_blank">Xem video trên Instagram 📱</a>
+                    </div>
+                `;
+            }
+        }
+    });
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for Instagram embed script to load
+    setTimeout(fixInstagramEmbeds, 3000);
+    
+    // Also fix on window load
+    window.addEventListener('load', fixInstagramEmbeds);
+});
