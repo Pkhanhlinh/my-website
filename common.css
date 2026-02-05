@@ -216,6 +216,11 @@ footer {
         display: none;
     }
     
+    /* Show mobile header on mobile */
+    header #mobile-header {
+        display: flex !important;
+    }
+    
     /* Hide navigation buttons in header on mobile */
     header .buttons {
         display: none !important;
@@ -257,35 +262,24 @@ footer {
         font-size: 1.2em !important;
     }
     
-    /* Make #kham-pha buttons more compact on mobile - 2x2 grid */
-    #kham-pha .buttons {
-        display: flex !important;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin-top: 10px;
-    }
-    
-    #kham-pha .button {
-        padding: 6px 4px;
-        font-size: 0.6em;
-        line-height: 1.1;
-        border-radius: 4px;
-        width: calc(50% - 3px);
-        flex: none;
-    }
-    
-    #kham-pha .button br {
-        display: none;
-    }
-    
-    #kham-pha .button span {
-        font-size: 0.9em !important;
-        display: inline;
-        margin-left: 3px;
-    }
-    
     footer {
         margin-bottom: 0;
+    }
+    
+    /* Mobile header language switcher styling */
+    #mobile-header .language-switcher-mobile {
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile-header #language-switcher {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    #mobile-header .lang-btn {
+        font-size: 10px;
+        padding: 4px 8px;
     }
 }
 

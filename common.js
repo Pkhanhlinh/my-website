@@ -25,7 +25,7 @@ const translations = {
         founder_greeting: "Chào bạn, mời bạn cứ gọi mình là Kalynk An Tuệ nhé!",
         founder_desc_1: 'Mình ghé thăm thế giới này với tư cách là một "người học việc" — học cách thương, cách hiểu và học cách lắng nghe. Thế nên, nếu bạn đang mang một túi tâm sự trĩu nặng, cứ ngồi xuống đây, mình luôn sẵn lòng nghe tiếng lòng của bạn như nghe một bản nhạc đời đầy màu sắc.',
         founder_desc_2: "Mình vốn là một kiến trúc sư ở Tây Hồ, nhưng lăn lộn đến tận Hồ Miễu để tìm bình yên vì mình không cần hồ quá rộng lớn, chỉ cần hồ đủ lặng để soi thấy chính mình.",
-        founder_desc_3: 'Nghe thì có vẻ "to tát", nhưng thực ra công việc của mình giản đơn lắm: mình mời bạn ngồi xuống, thở thật khẽ, và để âm thanh đưa bạn vào trạng thái thiền thụ động.',
+        founder_desc_3: 'Nghe thì có vẻ "to tát", nhưng thực ra công việc của mình giản đơn lắm: mình mời bạn ngồi xuống, thở thật khê, và để âm thanh đưa bạn vào trạng thái thiền thụ động.',
     },
     en: {
         home: "Home",
@@ -272,6 +272,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="healthy.html" class="button" data-i18n="healthy">Healthy</a>
     </div>
 </div>
+
+<!-- Mobile Header with Language Switcher -->
+<div id="mobile-header" style="display: none; justify-content: space-between; align-items: center; padding: 5px 10px;">
+    <div class="language-switcher-mobile"></div>
+    <div style="font-size: 1.2em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white;">KALYNK_AN TUỆ</div>
+</div>
 `;
     }
 
@@ -305,13 +311,12 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         
-        // On mobile, insert before #kham-pha h2; on desktop, insert in header
-        if (khamPhaSection && window.innerWidth <= 600) {
-            const h2 = khamPhaSection.querySelector('h2');
-            if (h2) {
-                khamPhaSection.insertBefore(langSwitcher, h2);
-            } else {
-                khamPhaSection.insertBefore(langSwitcher, khamPhaSection.firstChild);
+        // On mobile, insert language switcher into mobile-header; on desktop, insert in header
+        if (window.innerWidth <= 600) {
+            const mobileHeader = document.getElementById('mobile-header');
+            const langMobile = mobileHeader.querySelector('.language-switcher-mobile');
+            if (langMobile) {
+                langMobile.appendChild(langSwitcher);
             }
         } else if (headerDiv) {
             headerDiv.insertBefore(langSwitcher, headerDiv.firstChild);
@@ -328,29 +333,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let activeLink = document.querySelector(`a[href="${currentPage}"]`);
     if (activeLink) {
         activeLink.classList.add('active');
-    }
-
-    // Add mobile bottom navigation bar
-    const footer = document.querySelector('footer');
-    if (footer) {
-        const mobileNav = document.createElement('div');
-        mobileNav.className = 'mobile-bottom-nav';
-        mobileNav.innerHTML = `
-            <div class="nav-buttons">
-                <a href="index.html" class="button" data-i18n="home">Home</a>
-                <a href="homestay.html" class="button" data-i18n="homestay">Homestay</a>
-                <a href="healing.html" class="button" data-i18n="healing">Healing</a>
-                <a href="villa.html" class="button" data-i18n="villa">Flamingo</a>
-                <a href="healthy.html" class="button" data-i18n="healthy">Healthy</a>
-            </div>
-        `;
-        footer.parentNode.insertBefore(mobileNav, footer);
-        
-        // Set active class on mobile bottom nav
-        const mobileActiveLink = mobileNav.querySelector(`a[href="${currentPage}"]`);
-        if (mobileActiveLink) {
-            mobileActiveLink.classList.add('active');
-        }
     }
 });
 
