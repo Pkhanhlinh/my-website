@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album 2 - Kalynk An Tuệ</title>
+    <title>Phòng Trăng - Moon Room - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
 </head>
 <body>
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase;">KALYNK_AN TUỆ</div>
-            <div class="buttons">
-                <a href="index.html" class="button">Homestay Om.vibe</a>
-                <a href="healing.html" class="button">Healing</a>
-            <a href="villa.html" class="button">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
-            </div>
-        </div>
+        <div id="header-placeholder"></div>
     </header>
+
+    <!-- Mobile Header - KALYNK_AN TUỆ at top left -->
+    <div id="mobile-header" style="display: none; justify-content: flex-start; align-items: center; padding: 5px 10px; background-color: #4CAF50;">
+        <div style="font-size: 1.5em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white; height: 15px; line-height: 15px;">KALYNK_AN TUỆ</div>
+        <div class="language-switcher-mobile" style="margin-left: auto;"></div>
+    </div>
 
     <section id="kham-pha">
         <h2 style="font-size: 0.98em;">Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn</h2>
@@ -28,6 +27,13 @@
             <a href="villa.html" class="button">FLAMINGO RESORT<br><span style="font-size: 0.7em;">Booking Villa Chính Chủ</span></a>
             <a href="healthy.html" class="button">TRỊ LIỆU<br><span style="font-size: 0.7em;">Cơ thể</span></a>
         </div>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="https://www.facebook.com/share/1F9ZPAVmz4/" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> |
+            <a href="https://www.instagram.com/om.vibe.retreat/" style="color: white; text-decoration: none; margin: 0 10px;">Instagram</a> |
+            <a href="https://www.tiktok.com/@bomohoretreat.homieu?is_from_webapp=1&sender_device=pc" style="color: white; text-decoration: none; margin: 0 10px;">TikTok</a> |
+            <a href="blog.html" style="color: white; text-decoration: none; margin: 0 10px;">Blog</a>
+        </p>
+        <p style="text-align: center; font-size: 35px; font-weight: bold; color: white; margin-top: 0; margin-bottom: 30px;" class="desktop-omvibe">OM.VIBE RETREAT</p>
     </section>
 
     <section id="album">
@@ -54,6 +60,29 @@
         </div>
     </section>
 
+    <!-- Các phòng ở Om.Vibe -->
+    <section id="albums">
+        <h2>Các phòng ở Om.Vibe</h2>
+        <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
+            <a href="album7.html" class="button">Sương - Haize</a>
+            <a href="album2.html" class="button">Trăng - Moon</a>
+            <a href="album3.html" class="button">Nắng - Shine</a>
+            <a href="album4.html" class="button">Sao - Star</a>
+            <a href="album5.html" class="button">Mơ - Dreamy</a>
+            <a href="album6.html" class="button">Gió - Wind</a>
+        </div>
+        <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
+            <a href="album10.html" class="button">Mây - Cloud</a>
+            <a href="album11.html" class="button">Mưa - Rain</a>
+            <a href="album8.html" class="button">Thơ - Tập Thể - Daydreaming</a>
+            <a href="album9.html" class="button">Mộc - Tập thể - Rustic</a>
+        </div>
+        <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
+            <a href="album12.html" class="button">P.Thiền - Meditation</a>
+            <a href="album13.html" class="button">Xông hơi - Sục massage n.nóng - Bể lạnh<br>Sauna - Jacuzzi - Cold tank</a>
+        </div>
+    </section>
+
     <!-- Mobile Bottom Navigation - 5 buttons -->
     <div class="mobile-bottom-nav">
         <div class="nav-buttons">
@@ -61,12 +90,13 @@
             <a href="homestay.html" class="button">Homestay</a>
             <a href="healing.html" class="button">Healing</a>
             <a href="villa.html" class="button">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
+            <a href="healthy.html" class="button">Healthy</a>
         </div>
     </div>
 
     <footer>
         <p style="text-align: center; font-size: 0.5em; margin: 10px 0;">Web làm bởi: (+84.388771221)</p>
-        <a href="index.html" class="back">Quay lại trang chủ</a>
+        <a href="homestay.html" class="back">Quay lại trang Homestay</a>
         <p>&copy; 2026 Kalynk An Tuệ. Tất cả quyền được bảo lưu.</p>
     </footer>
 </body>
