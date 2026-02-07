@@ -216,9 +216,14 @@ footer {
 }
 
 /* Room Grid Layout - Mobile only: 3 buttons per row */
-/* Desktop keeps original flexbox layout */
+/* Desktop keeps original flexbox layout with spacing */
 .room-grid {
-    /* Desktop: use flexbox (default .buttons behavior) */
+    /* Desktop: use flexbox with equal width buttons, left-right align */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .room-button {
@@ -230,6 +235,9 @@ footer {
     transition: background-color 0.3s;
     text-align: center;
     font-size: 0.9em;
+    flex: 1 1 calc(25% - 12px); /* 4 buttons per row on desktop */
+    min-width: 150px;
+    max-width: calc(25% - 12px);
 }
 
 .room-button:hover {
@@ -241,24 +249,32 @@ footer {
 }
 
 .room-button.room-full-width {
-    /* Full width on mobile only */
+    /* Full width on both mobile and desktop */
+    flex: 1 1 100%;
+    max-width: none;
 }
 
-/* Mobile responsive - 3 buttons per row */
+/* Mobile responsive - auto-fit columns */
 @media screen and (max-width: 600px) {
     .room-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: flex-start;
     }
     
     .room-button {
-        padding: 10px 8px;
-        font-size: 0.75em;
+        padding: 8px 6px;
+        font-size: 0.7em;
+        flex: 1 1 auto;
+        min-width: 28%;
+        max-width: 32%;
     }
     
     .room-button.room-full-width {
-        grid-column: span 3;
+        flex: 1 1 100%;
+        max-width: none;
+        margin-top: 4px;
     }
 }
 
