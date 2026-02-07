@@ -200,6 +200,25 @@ footer {
     background-color: #66BB6A;
 }
 
+/* Desktop title group break spacing - 0.5px line gap */
+.title-group-break {
+    display: none;
+}
+
+#video h2 small {
+    margin-top: 3px !important;
+    display: block;
+    font-size: 0.7em;
+}
+
+#video h2 .desktop-break {
+    font-size: 0.65em;
+}
+
+#video h2 .main-title {
+    font-size: 0.9em;
+}
+
 /* Show mobile bottom nav only on mobile (up to 600px) */
 @media screen and (max-width: 600px) {
     .mobile-bottom-nav {
@@ -948,6 +967,27 @@ a.back:hover {
     .desktop-omvibe {
         display: none;
     }
+    
+    /* Title - line break on mobile */
+    .desktop-break {
+        display: block !important;
+        margin-bottom: 3px;
+    }
+    
+    .desktop-break-2 {
+        display: block !important;
+        margin-top: 3px;
+    }
+    
+    /* Video section title - larger font */
+    #video h2 {
+        font-size: 1.5em !important;
+    }
+    
+    /* Video section small text */
+    #video small {
+        font-size: 0.7em !important;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
@@ -1023,6 +1063,22 @@ a.back:hover {
     
     .albums {
         grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Desktop line break for title */
+    .desktop-break {
+        display: block;
+        margin-top: 0.8px;
+    }
+    
+    .desktop-break-2 {
+        display: block;
+        margin-top: 0.8px;
+    }
+    
+    /* Spacing between title groups */
+    .title-group-break {
+        margin-top: 0.5px;
     }
 }
 
