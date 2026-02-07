@@ -120,7 +120,7 @@ section {
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.5em;
     margin-top: 19px;
 }
