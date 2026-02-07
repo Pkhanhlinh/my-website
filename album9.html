@@ -9,7 +9,28 @@
 </head>
 <body>
     <header>
-        <div id="header-placeholder"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase;">KALYNK_AN TUỆ</div>
+            <div class="buttons">
+                <a href="index.html" class="button">Owner</a>
+                <a href="homestay.html"Homestay class="button"></a>
+                <a href="healing.html" class="button">Healing</a>
+                <a href="villa.html" class="button">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
+                <a href="healthy.html" class="button">Healthy</a>
+            </div>
+        </div>
+
+        <div class="language-switcher" style="position: absolute; top: 10px; right: 10px;">
+            <select onchange="window.location.href = this.value">
+                <option value="">🌐 Tiếng Việt 🇻🇳</option>
+                <option value="?lang=en">🌐 English 🇺🇸</option>
+                <option value="?lang=fr">🌐 Français 🇫🇷</option>
+                <option value="?lang=ja">🌐 日本語 🇯🇵</option>
+                <option value="?lang=ko">🌐 한국어 🇰🇷</option>
+                <option value="?lang=zh">🌐 中文 🇨🇳</option>
+                <option value="?lang=ru">🌐 Русский 🇷🇺</option>
+            </select>
+        </div>
     </header>
 
     <!-- Mobile Header - KALYNK_AN TUỆ at top left -->
@@ -20,7 +41,7 @@
 
     <section id="kham-pha">
         <h2 style="font-size: 0.98em;">Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn</h2>
-        <small style="font-size: 0.8em; margin-top: -10px; display: block;">(whatsApp zalo: 0777998858 -0911858998 - 0966758689)</small>
+        <small style="font-size: 0.8em; margin-top: -10px; display: block;">(whatsApp zalo: 0777998858 - 0911858998 - 0966758689)</small>
         <div class="buttons">
             <a href="homestay.html" class="button">OM.VIBE RETREAT MIEU LAKE<br><span style="font-size: 0.7em;">Homestay Hồ Miễu - Thân - Tâm - Trí</span></a>
             <a href="healing.html" class="button">THIỀN THỤ ĐỘNG<br><span style="font-size: 0.7em;">Bằng Âm Thanh Chữa Lành</span></a>
@@ -38,16 +59,30 @@
 
     <section id="album">
         <h2>Mộc - Tập thể - Rustic</h2>
-        <p>🌿🌿🌿MỘC - ALBUM 9 🌿🌿🌿<br>🌿Không gian tuyệt đẹp đang chờ đón bạn.<br>🌿Hãy khám phá vẻ đẹp của nơi đây.</p>
-        <div class="gallery">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
-            <img loading="lazy" src="" alt="" style="width: 520px; height: auto;">
+        <p>🌿🌿🌿MỘC - MỘC MẠC BÌNH DỊ 🌿🌿🌿<br>🌿Đây là phòng đa năng của OM.VIBE.<br>🌿Được dùng để làm phòng họp, phòng thiền lớn, phòng tập yoga hoặc ăn trong nhà trong trường hợp mưa gió.<br>🌿Nó có thể là phòng tập thể di động với 6 giường 1,2m nằm liền kề nhau.<br>🌿Hoặc có thể thêm được thêm 6 giường di động nữa trong trường hợp các đoàn cần</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
+            <div style="flex: 1; min-width: 300px; max-width: 500px;">
+                <h3>Phòng ngủ công đồng</h3>
+                <video width="100%" controls>
+                    <source src="M%E1%BB%99c/ph%C3%B2ng-ng%E1%BB%A7-c%E1%BB%93ng-%C4%91%E1%BB%93ng.MP4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+            </div>
+            <div style="flex: 1; min-width: 300px; max-width: 500px;">
+                <h3>Phòng họp cho 50 người - có màn hình 70 inch</h3>
+                <video width="100%" controls>
+                    <source src="M%E1%BB%99c/7129380441979.MP4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 1.2em;">🌿Bình thường phòng đa năng này là phòng khách🌿</p>
+        <div class="gallery" style="text-align: center;">
+            <img loading="lazy" src="Mộc/z7348736995378_b2aefd068b168b7e79801dbc54b1743c.jpg" alt="Mộc - Rustic" style="width: 520px; height: auto;">
+            <img loading="lazy" src="Mộc/z7348736995522_54ac844ce3dd3b8beb765ab56a7319fe.jpg" alt="Mộc - Rustic" style="width: 520px; height: auto;">
+            <img loading="lazy" src="Mộc/z7348736995524_924089f08280607ca4a5b5a9587c40b8.jpg" alt="Mộc - Rustic" style="width: 520px; height: auto;">
+            <img loading="lazy" src="Mộc/z7348736995525_2f0bc5614b039cbd1bacce528bc34c2d.jpg" alt="Mộc - Rustic" style="width: 520px; height: auto;">
+            <img loading="lazy" src="Mộc/z7348736997741_85dfb79f4451d98df309d4b93bdc1206.jpg" alt="Mộc - Rustic" style="width: 520px; height: auto;">
         </div>
     </section>
 
@@ -55,20 +90,17 @@
     <section id="albums">
         <h2>Các phòng ở Om.Vibe</h2>
         <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
-            <a href="album7.html" class="button">Sương - Haize</a>
+            <a href="album1.html" class="button">Lặng - Calm</a>
             <a href="album2.html" class="button">Trăng - Moon</a>
             <a href="album3.html" class="button">Nắng - Shine</a>
             <a href="album4.html" class="button">Sao - Star</a>
             <a href="album5.html" class="button">Mơ - Dreamy</a>
             <a href="album6.html" class="button">Gió - Wind</a>
-        </div>
-        <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
             <a href="album10.html" class="button">Mây - Cloud</a>
+            <a href="album7.html" class="button">Sương - Haize</a>
             <a href="album11.html" class="button">Mưa - Rain</a>
             <a href="album8.html" class="button">Thơ - Tập Thể - Daydreaming</a>
             <a href="album9.html" class="button">Mộc - Tập thể - Rustic</a>
-        </div>
-        <div class="buttons" style="flex-wrap: wrap; justify-content: center;">
             <a href="album12.html" class="button">P.Thiền - Meditation</a>
             <a href="album13.html" class="button">Xông hơi - Sục massage n.nóng - Bể lạnh<br>Sauna - Jacuzzi - Cold tank</a>
         </div>
