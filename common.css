@@ -214,6 +214,13 @@ footer {
     }
 }
 
+/* Desktop buttons top margin adjustment - 15px spacing */
+@media screen and (min-width: 601px) {
+    #kham-pha .buttons {
+        margin-top: 15px;
+    }
+}
+
 /* Room Grid Layout - Mobile only: 3 buttons per row */
 /* Desktop keeps original flexbox layout with spacing */
 .room-grid {
@@ -342,7 +349,7 @@ footer {
     }
     
     /* Hide navigation buttons in header on mobile */
-    header .buttons {
+    header > div:first-child {
         display: none !important;
     }
     
