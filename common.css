@@ -106,6 +106,7 @@ video {
     max-width: 600px;
     margin: 1em auto;
     display: block;
+    background-color: #2E7D32;
 }
 
 section {
@@ -252,26 +253,24 @@ footer {
     max-width: none;
 }
 
-/* Mobile responsive - auto-fit columns */
+/* Mobile responsive - 3 columns, equal width, fills completely */
 @media screen and (max-width: 600px) {
     .room-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        justify-items: stretch;
     }
     
     .room-button {
-        padding: 8px 6px;
+        padding: 10px 6px;
         font-size: 0.7em;
-        flex: 1 1 auto;
-        min-width: 28%;
-        max-width: 32%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .room-button.room-full-width {
-        flex: 1 1 100%;
-        max-width: none;
+        grid-column: 1 / -1;
         margin-top: 4px;
     }
 }
@@ -851,6 +850,7 @@ a.back:hover {
     video {
         width: 100%;
         max-width: 100%;
+        background-color: #2E7D32;
     }
     
     #video-reviews {
