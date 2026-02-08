@@ -258,20 +258,31 @@ footer {
     .room-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 4px;
         justify-items: stretch;
     }
     
     .room-button {
-        padding: 10px 6px;
-        font-size: 0.7em;
+        padding: 4px 3px;
+        font-size: 0.55em;
         width: 100%;
         box-sizing: border-box;
+        line-height: 1.2;
+        white-space: normal;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
     }
     
     .room-button.room-full-width {
         grid-column: 1 / -1;
         margin-top: 4px;
+        font-size: 0.6em;
+        padding: 6px 3px;
+        min-height: 40px;
     }
 }
 
