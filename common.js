@@ -1,4 +1,4 @@
-// Language translations (excluding proper nouns: Kalynk An Tuệ, Om.Vibe, Flamingo Đại Lải)
+í// Language translations (excluding proper nouns: Kalynk An Tuệ, Om.Vibe, Flamingo Đại Lải)
 const translations = {
     vi: {
         // Navigation

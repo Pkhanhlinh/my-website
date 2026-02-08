@@ -390,6 +390,7 @@ footer {
     #mobile-header .language-switcher-mobile {
         display: flex;
         align-items: center;
+        margin-left: auto;
     }
     
     #mobile-header #language-switcher {
