@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="index.html" class="button" data-i18n="home">Owner</a>
         <a href="homestay.html" class="button" data-i18n="homestay">Homestay</a>
         <a href="healing.html" class="button" data-i18n="healing">Healing</a>
-        <a href="villa.html" class="button" data-i18n="villa">Flamingo</a>
+        <a href="villa.html" class="button" data-i18n="villa">Flamingo Resort</a>
         <a href="healthy.html" class="button" data-i18n="healthy">Healthy</a>
     </div>
 </div>
