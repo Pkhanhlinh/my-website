@@ -260,51 +260,93 @@ footer {
     max-width: none;
 }
 
-/* Mobile responsive - 3 columns, equal width, centered, exact measurements */
+/* Mobile responsive - 3 columns, equal width, centered */
 @media screen and (max-width: 600px) {
     .room-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 6px;
-        width: calc(100% - 12px);
-        max-width: 360px;
-        margin: 0;
+        width: calc(100% - 16px);
+        max-width: 100%;
+        margin: 0 auto;
         padding: 0;
+        box-sizing: border-box;
     }
     
     .room-button {
-        padding: 3.8px 3px;
-        font-size: 0.7em;
+        padding: 8px 4px;
+        font-size: 0.75em;
         width: 100%;
         box-sizing: border-box;
-        line-height: 1.25;
-        white-space: normal;
-        word-wrap: break-word;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 40px;
+        min-height: 36px;
         border-radius: 4px;
     }
     
     .room-button.room-full-width {
         grid-column: 1 / -1;
-        font-size: 0.7em;
-        padding: 3.8px 3px;
-        min-height: 35px;
+        font-size: 0.75em;
+        padding: 8px 4px;
+        min-height: 36px;
         text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
     }
     
     section#albums {
         padding: 6px;
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     section#albums .room-grid {
-        width: calc(100% - 12px);
-        max-width: 360px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile responsive - Villa booking buttons: 3 columns x 3 rows */
+@media screen and (max-width: 600px) {
+    #albums .buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        width: calc(100% - 16px);
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #albums .buttons .button {
+        padding: 8px 4px;
+        font-size: 0.75em;
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 36px;
+        border-radius: 4px;
     }
 }
 
@@ -1268,5 +1310,17 @@ a.back:hover {
     .instagram-media-fallback a {
         padding: 8px 20px;
         font-size: 14px;
+    }
+}
+
+/* Desktop only - hide on mobile */
+.desktop-only {
+    display: block;
+}
+
+/* Hide on mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+    .desktop-only {
+        display: none !important;
     }
 }
