@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
     <style>
+        /* Desktop styles for villa buttons - single row */
+        @media (min-width: 601px) {
+            #albums .villa-buttons-container {
+                display: flex !important;
+                justify-content: center !important;
+                gap: 15px !important;
+            }
+            #albums .villa-buttons-container .villa-row {
+                display: contents !important;
+            }
+        }
         /* Mobile styles for villa buttons - 2 rows of 4 buttons */
         @media (max-width: 600px) {
             #albums .villa-buttons-container {
@@ -142,37 +153,6 @@
                 <a href="villa-7p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 7p</a>
                 <a href="villa-8p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 8p</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Album Navigation - Album khác -->
-    <section id="album-navigation" style="padding: 20px; background: linear-gradient(to bottom, #2c3e50, #1a252f);">
-        <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px; color: white;">Xem thêm các Villa 1 phòng khác</p>
-        <div class="album-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
-            <a href="villa-album1.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
-                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                    <img src="flamingo/1p/341/flamingo-chinh-chủ.jpg" alt="1RXY341" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
-                </div>
-                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY341</span>
-            </a>
-            <a href="villa-album2.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
-                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                    <img src="flamingo/1p/328/rủ-nhau-đi-trốn.jpg" alt="1RXY238" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
-                </div>
-                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY238</span>
-            </a>
-            <a href="villa-album3.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
-                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                    <img src="flamingo/1p/335/villa-1p-ngủ-có-bếp-flamingo-đại-lải.jpg" alt="1RXY335" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
-                </div>
-                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY335</span>
-            </a>
-            <a href="villa-album4.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
-                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                    <img src="flamingo/1p/333/z7160229130152_45a7fba17fd98c6d379fb216ff15b1ba.jpg" alt="1RXY333" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
-                </div>
-                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY333</span>
-            </a>
         </div>
     </section>
 
