@@ -260,25 +260,26 @@ footer {
     max-width: none;
 }
 
-/* Mobile responsive - 3 columns, equal width, centered */
+/* Mobile responsive - 2 columns, equal width, centered */
 @media screen and (max-width: 600px) {
     .room-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
-        width: calc(100% - 16px);
-        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        width: calc(100% - 32px);
+        max-width: 400px;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
+        justify-items: center;
     }
     
     .room-button {
-        padding: 8px 4px;
-        font-size: 0.75em;
+        padding: 10px 8px;
+        font-size: 0.85em;
         width: 100%;
         box-sizing: border-box;
-        line-height: 1.2;
+        line-height: 1.3;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -287,18 +288,19 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 36px;
-        border-radius: 4px;
+        min-height: 44px;
+        border-radius: 6px;
     }
     
     .room-button.room-full-width {
-        grid-column: 1 / -1;
-        font-size: 0.75em;
-        padding: 8px 4px;
-        min-height: 36px;
+        grid-column: span 2;
+        font-size: 0.85em;
+        padding: 10px 8px;
+        min-height: 44px;
         text-align: center;
         white-space: normal;
         word-wrap: break-word;
+        justify-self: stretch;
     }
     
     section#albums {
@@ -312,31 +314,33 @@ footer {
     }
     
     section#albums .room-grid {
-        width: 100%;
-        max-width: 100%;
+        width: calc(100% - 32px);
+        max-width: 400px;
+        margin: 0 auto;
         box-sizing: border-box;
+        justify-items: center;
     }
 }
 
-/* Mobile responsive - Villa booking buttons: 3 columns x 3 rows */
+/* Mobile responsive - Villa booking buttons: 2 columns x 4 rows */
 @media screen and (max-width: 600px) {
     #albums .buttons {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
-        width: calc(100% - 16px);
-        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        width: calc(100% - 32px);
+        max-width: 400px;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
     }
     
     #albums .buttons .button {
-        padding: 8px 4px;
-        font-size: 0.75em;
+        padding: 10px 8px;
+        font-size: 0.85em;
         width: 100%;
         box-sizing: border-box;
-        line-height: 1.2;
+        line-height: 1.3;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -345,8 +349,8 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 36px;
-        border-radius: 4px;
+        min-height: 44px;
+        border-radius: 6px;
     }
 }
 
