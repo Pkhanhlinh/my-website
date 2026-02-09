@@ -6,6 +6,57 @@
     <title>Quản lý Villa - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
+    <style>
+        /* Mobile styles for villa buttons - 2 rows of 4 buttons */
+        @media (max-width: 600px) {
+            #albums .villa-buttons-container {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 10px !important;
+                width: 100% !important;
+            }
+            #albums .villa-row {
+                display: flex !important;
+                justify-content: center !important;
+                gap: 10px !important;
+                width: 100% !important;
+            }
+            #albums .villa-row .button {
+                flex: 0 0 calc(25% - 8px) !important;
+                min-width: 70px !important;
+                max-width: 90px !important;
+                font-size: 0.9em !important;
+                padding: 10px 5px !important;
+                text-align: center !important;
+            }
+            /* Mobile styles for album navigation */
+            #album-navigation .album-grid {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+                max-width: 100% !important;
+                padding: 10px !important;
+            }
+            #album-navigation .album-item {
+                flex: 0 0 auto !important;
+            }
+            #album-navigation .album-cover {
+                width: 70px !important;
+                height: 70px !important;
+            }
+            #album-navigation .album-cover img {
+                width: 55px !important;
+                height: 55px !important;
+            }
+            #album-navigation .album-item span {
+                font-size: 0.65em !important;
+                margin-top: 4px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -78,15 +129,50 @@
 
     <section id="albums">
         <h2>Booking Villa Flamingo Đại Lải Chính Chủ</h2>
-        <div class="buttons">
-            <a href="villa-1p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 1p</a>
-            <a href="villa-2p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 2p</a>
-            <a href="villa-3p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 3p</a>
-            <a href="villa-4p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 4p</a>
-            <a href="villa-5p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 5p</a>
-            <a href="villa-6p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 6p</a>
-            <a href="villa-7p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 7p</a>
-            <a href="villa-8p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 8p</a>
+        <div class="villa-buttons-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <div class="villa-row">
+                <a href="villa-1p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 1p</a>
+                <a href="villa-2p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 2p</a>
+                <a href="villa-3p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 3p</a>
+                <a href="villa-4p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 4p</a>
+            </div>
+            <div class="villa-row">
+                <a href="villa-5p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 5p</a>
+                <a href="villa-6p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 6p</a>
+                <a href="villa-7p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 7p</a>
+                <a href="villa-8p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 8p</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Album Navigation - Album khác -->
+    <section id="album-navigation" style="padding: 20px; background: linear-gradient(to bottom, #2c3e50, #1a252f);">
+        <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px; color: white;">Xem thêm các Villa 1 phòng khác</p>
+        <div class="album-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+            <a href="villa-album1.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <img src="flamingo/1p/341/flamingo-chinh-chủ.jpg" alt="1RXY341" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
+                </div>
+                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY341</span>
+            </a>
+            <a href="villa-album2.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <img src="flamingo/1p/328/rủ-nhau-đi-trốn.jpg" alt="1RXY238" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
+                </div>
+                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY238</span>
+            </a>
+            <a href="villa-album3.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <img src="flamingo/1p/335/villa-1p-ngủ-có-bếp-flamingo-đại-lải.jpg" alt="1RXY335" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
+                </div>
+                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY335</span>
+            </a>
+            <a href="villa-album4.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <img src="flamingo/1p/333/z7160229130152_45a7fba17fd98c6d379fb216ff15b1ba.jpg" alt="1RXY333" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 10px; left: 10px;" onerror="this.style.display='none'">
+                </div>
+                <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY333</span>
+            </a>
         </div>
     </section>
 

@@ -6,6 +6,39 @@
     <title>Villa 1p - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
+    <style>
+        /* Mobile styles for album icons */
+        @media (max-width: 600px) {
+            #villa-albums .album-grid {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+                max-width: 100% !important;
+                padding: 10px !important;
+            }
+            #villa-albums .album-item {
+                flex: 0 0 auto !important;
+            }
+            #villa-albums .album-cover {
+                width: 70px !important;
+                height: 70px !important;
+            }
+            #villa-albums .album-cover img {
+                width: 55px !important;
+                height: 55px !important;
+            }
+            #villa-albums .album-cover svg {
+                width: 25px !important;
+                height: 25px !important;
+            }
+            #villa-albums .album-item span {
+                font-size: 0.65em !important;
+                margin-top: 4px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -49,7 +82,58 @@
     </section>
 
     <section id="villa-content">
-        <h2>Villa 1p</h2>
+        <h2>🌿Villa một phòng ngủ giành cho các cặp đôi hoặc gia đình nhỏ🌿</h2>
+        
+        <!-- Villa Albums Section -->
+        <section id="villa-albums" style="padding: 20px;">
+            <div class="album-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 600px; margin: 0 auto;">
+                <a href="villa-album1.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <!-- Stacked images icon effect -->
+                        <img src="flamingo/1p/341/flamingo-chinh-chủ.jpg" alt="1RXY341" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">1RXY341</span>
+                </a>
+                <a href="villa-album2.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/1p/328/rủ-nhau-đi-trốn.jpg" alt="1RXY238" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">1RXY238</span>
+                </a>
+                <a href="villa-album3.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/1p/335/villa-1p-ngủ-có-bếp-flamingo-đại-lải.jpg" alt="1RXY335" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">1RXY335</span>
+                </a>
+                <a href="villa-album4.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/1p/333/z7160229130152_45a7fba17fd98c6d379fb216ff15b1ba.jpg" alt="1RXY333" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">1RXY333</span>
+                </a>
+            </div>
+        </section>
         <!-- Nội dung Villa 1p - Viết nội dung vào đây -->
     </section>
 
@@ -65,21 +149,6 @@
             <a href="villa-6p.html" class="button">Villa 6p</a>
             <a href="villa-7p.html" class="button">Villa 7p</a>
             <a href="villa-8p.html" class="button">Villa 8p</a>
-        </div>
-    </section>
-
-    <!-- Villa Codes Section -->
-    <section id="villa-codes" style="padding: 20px;">
-        <h2 style="font-size: 1.2em;">Flamingo Đại Lải</h2>
-        <div class="villa-code-list" style="margin-top: 15px;">
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 1PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">1RX335Y Xem</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 2PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">2CXY14 Xem</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 3PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 3]</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 4PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 4]</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 5PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 5]</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 6PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 6]</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 7PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 7]</a></p>
-            <p style="margin: 8px 0;"><a href="#" style="color: white; text-decoration: none;">→ VILLA 8PN</a> <span style="color: #90EE90;">→</span> <a href="#" style="color: #87CEEB; text-decoration: underline;">[Mã Villa 8]</a></p>
         </div>
     </section>
 

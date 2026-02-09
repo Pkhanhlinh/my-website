@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Album 2 - Kalynk An Tuệ</title>
+    <title>Villa 1RXY238 - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
+    <style>
+        /* Mobile styles for album icons */
+        @media (max-width: 600px) {
+            #other-albums .album-grid {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+                max-width: 100% !important;
+                padding: 10px !important;
+            }
+            #other-albums .album-item {
+                flex: 0 0 auto !important;
+            }
+            #other-albums .album-cover {
+                width: 70px !important;
+                height: 70px !important;
+            }
+            #other-albums .album-cover img {
+                width: 55px !important;
+                height: 55px !important;
+            }
+            #other-albums .album-cover svg {
+                width: 25px !important;
+                height: 25px !important;
+            }
+            #other-albums .album-item span {
+                font-size: 0.65em !important;
+                margin-top: 4px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase;">KALYNK_AN TUỆ</div>
             <div class="nav-buttons">
-                <a href="index.html" class="button">Homestay Om.vibe</a>
+                <a href="index.html" class="button">Owner</a>
+                <a href="homestay.html" class="button">Homestay</a>
                 <a href="healing.html" class="button">Healing</a>
-                <a href="villa.html" class="button">Flamingo Resort</a>
+                <a href="villa.html" class="button active">Flamingo Resort</a>
+                <a href="healthy.html" class="button">Healthy</a>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Header - KALYNK_AN TUỆ at top left -->
+    <div id="mobile-header" style="display: none; flex-direction: column; margin-top: 0;">
+        <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white; line-height: 35px; text-align: left; background-color: #4CAF50; height: 1.7em; display: flex; align-items: center; padding-left: 10px;">KALYNK_AN TUỆ</div>
+        <div style="height: 1px; background: transparent; margin: 0;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 5px 10px; background-color: #4CAF50;">
+            <div style="font-size: 1.2em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white; line-height: 15px;">FLAMINGO ĐẠI LẢI 5*</div>
+            <div class="language-switcher-mobile"></div>
+        </div>
+    </div>
 
     <section id="kham-pha">
         <h2 style="font-size: 0.98em;">Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn</h2>
@@ -28,28 +73,105 @@
             <a href="villa.html" class="button">FLAMINGO RESORT<br><span style="font-size: 0.7em;">Booking Villa Chính Chủ</span></a>
             <a href="healthy.html" class="button">TRỊ LIỆU<br><span style="font-size: 0.7em;">Cơ thể</span></a>
         </div>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="https://www.facebook.com/thuebietthudailai" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> |
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">TikTok</a> |
+            <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">YouTube</a>
+        </p>
+        <p style="text-align: center; font-size: 35px; font-weight: bold; color: white; margin-top: 0; margin-bottom: 30px;" class="desktop-only">FLAMINGO ĐẠI LẢI 5*</p>
     </section>
 
     <section id="album">
-        <h2>Villa Album 2</h2>
+        <h2>Villa 1RXY238</h2>
+        <p style="font-size: 1.2em; color: white;">Villa Đẹp Cho Cặp Đôi</p>
+        
         <div class="gallery">
-            <!-- Add images here -->
+            <img loading="lazy" src="flamingo/1p/328/rủ-nhau-đi-trốn.jpg" alt="Rủ Nhau Đi Trốn">
+            <img loading="lazy" src="flamingo/1p/328/tạm-xa-thành-phố-gần-hà-nọi.jpg" alt="Tạm Xa Thành Phố Gần Hà Nội">
+            <img loading="lazy" src="flamingo/1p/328/villa-kín-đáo-cho-2-người.jpg" alt="Villa Kín Đáo Cho 2 Người">
+            <img loading="lazy" src="flamingo/1p/328/z7167146887927_5b29976c741a8ddfcab9902dd684f948.jpg" alt="Ảnh Villa 1">
+            <img loading="lazy" src="flamingo/1p/328/z7167146894575_692f53ef0807235c582a8561516e8eef.jpg" alt="Ảnh Villa 2">
+            <img loading="lazy" src="flamingo/1p/328/z7167146897828_3d4add62a29f60ecc90a1e373dada1ea.jpg" alt="Ảnh Villa 3">
+            <img loading="lazy" src="flamingo/1p/328/z7167146898938_f71eb04f87a8408f3e197ba1670c4826.jpg" alt="Ảnh Villa 4">
+            <img loading="lazy" src="flamingo/1p/328/z7167146901398_944688103426ba05d44dc03f378167fd.jpg" alt="Ảnh Villa 5">
+            <img loading="lazy" src="flamingo/1p/328/z7167146907233_f8247d5958abd8100dc9f8edccaf4a32.jpg" alt="Ảnh Villa 6">
+            <img loading="lazy" src="flamingo/1p/328/z7167146907402_bb9d748716a9215bda5992b8e4ac691b.jpg" alt="Ảnh Villa 7">
+            <img loading="lazy" src="flamingo/1p/328/z7167146910514_de6aa6207b95e55700e0520892e83659.jpg" alt="Ảnh Villa 8">
+            <img loading="lazy" src="flamingo/1p/328/z7167146910987_446f63eb2355a911960f23f75eb1cb33.jpg" alt="Ảnh Villa 9">
+            <img loading="lazy" src="flamingo/1p/328/z7167146917116_10eb1a34268d37496c1e5628bacff5a6.jpg" alt="Ảnh Villa 10">
+            <img loading="lazy" src="flamingo/1p/328/z7167146924892_b1cb794e162b0dd6f117363e785f84e5.jpg" alt="Ảnh Villa 11">
+            <img loading="lazy" src="flamingo/1p/328/z7167146928037_e5a654072d62fbb3366f2c71ff1e2c6e.jpg" alt="Ảnh Villa 12">
+            <img loading="lazy" src="flamingo/1p/328/z7167146931696_4fc22e6a0460b9f8fdd8b055fae3bd5d.jpg" alt="Ảnh Villa 13">
+            <img loading="lazy" src="flamingo/1p/328/z7167146990186_c82639494fda21f9aa9680fd4122c3a4.jpg" alt="Ảnh Villa 14">
+            <img loading="lazy" src="flamingo/1p/328/z7195785604248_c7829335a394ae72ef876c2f5786e374.jpg" alt="Ảnh Villa 15">
+            <img loading="lazy" src="flamingo/1p/328/z7195785616363_94ef351c9be3d25c1fd1b9cf13f3e9f4.jpg" alt="Ảnh Villa 16">
+            <img loading="lazy" src="flamingo/1p/328/z7195785617730_18f6253d0a57da58a703c57e15dd1db1.jpg" alt="Ảnh Villa 17">
+            <img loading="lazy" src="flamingo/1p/328/z7195785619976_2b763fd3bbacd20d36b80b51de4b3477.jpg" alt="Ảnh Villa 18">
+            <img loading="lazy" src="flamingo/1p/328/z7195785625915_2cbd614389c831522278ba81950da74a.jpg" alt="Ảnh Villa 19">
+            <img loading="lazy" src="flamingo/1p/328/z7195785629096_85d178f17479a0b5c5ecbe126e8d682c.jpg" alt="Ảnh Villa 20">
+            <img loading="lazy" src="flamingo/1p/328/z7195785632551_ccbaf07b9701aa14d6f855d9992858c2.jpg" alt="Ảnh Villa 21">
+            <img loading="lazy" src="flamingo/1p/328/z7195785635417_4d163a14ec51000684199358ce5ee836.jpg" alt="Ảnh Villa 22">
+            <img loading="lazy" src="flamingo/1p/328/z7195785642897_8ac9ff4fa2378a2d35d0ab9e37b1454c.jpg" alt="Ảnh Villa 23">
+            <img loading="lazy" src="flamingo/1p/328/z7195785645790_3ad2ae3bcd30a786176d0f6122599f12.jpg" alt="Ảnh Villa 24">
+            <img loading="lazy" src="flamingo/1p/328/z7195785648489_a3130dac56ebfe131c4d8a7ed0f5110f.jpg" alt="Ảnh Villa 25">
+            <img loading="lazy" src="flamingo/1p/328/z7195785652316_835258cb83e3e2b5c8ee406e204e8b94.jpg" alt="Ảnh Villa 26">
+            <img loading="lazy" src="flamingo/1p/328/z7195785652694_d775935b0a9dc6db13551366be4d4267.jpg" alt="Ảnh Villa 27">
+            <img loading="lazy" src="flamingo/1p/328/z7195785659772_c1b587afbcce65561a610c6b787d729c.jpg" alt="Ảnh Villa 28">
+            <img loading="lazy" src="flamingo/1p/328/z7195785660374_577997bd3569a1e99755e14d2e77dff7.jpg" alt="Ảnh Villa 29">
+            <img loading="lazy" src="flamingo/1p/328/z7195785666518_288eaff57e888ad984cebbc46dd43540.jpg" alt="Ảnh Villa 30">
+            <img loading="lazy" src="flamingo/1p/328/z7195785670613_c01e4f2689738833208dde9509415d0c.jpg" alt="Ảnh Villa 31">
+            <img loading="lazy" src="flamingo/1p/328/z7195785672299_77fe4f304fe60fa88b740f7fb517cffb.jpg" alt="Ảnh Villa 32">
+            <img loading="lazy" src="flamingo/1p/328/z7195785675751_7895d86b6ac68ee6729e3b0a688eee5b.jpg" alt="Ảnh Villa 33">
+            <img loading="lazy" src="flamingo/1p/328/z7195785680276_8506a2c455ed4547346208617db2aa00.jpg" alt="Ảnh Villa 34">
+            <img loading="lazy" src="flamingo/1p/328/z7195785683023_c86d41b2a0b5817347b74ed6a5a353c8.jpg" alt="Ảnh Villa 35">
         </div>
+        
+        <!-- Album Navigation - Other Albums -->
+        <section id="other-albums" style="padding: 20px;">
+            <p style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">Xem thêm các Villa 1 phòng khác</p>
+            <div class="album-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <a href="villa-album1.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                    <div class="album-cover" style="width: 70px; height: 70px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/1p/341/flamingo-chinh-chủ.jpg" alt="1RXY341" style="width: 55px; height: 55px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                    </div>
+                    <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY341</span>
+                </a>
+                <a href="villa-album2.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                    <div class="album-cover" style="width: 70px; height: 70px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/1p/328/rủ-nhau-đi-trốn.jpg" alt="1RXY238" style="width: 55px; height: 55px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                    </div>
+                    <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY238</span>
+                </a>
+                <a href="villa-album3.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                    <div class="album-cover" style="width: 70px; height: 70px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    </div>
+                    <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY335</span>
+                </a>
+                <a href="villa-album4.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+                    <div class="album-cover" style="width: 70px; height: 70px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    </div>
+                    <span style="margin-top: 5px; font-size: 0.8em; text-align: center; color: white;">1RXY333</span>
+                </a>
+            </div>
+        </section>
     </section>
 
     <!-- Mobile Bottom Navigation - 5 buttons -->
     <div class="mobile-bottom-nav">
+        <div style="text-align: center; margin-bottom: 10px;">
+            <a href="villa-1p.html" class="back" style="display: inline-block;">« Quay lại Villa 1p</a>
+        </div>
         <div class="nav-buttons">
             <a href="index.html" class="button">Owner</a>
             <a href="homestay.html" class="button">Homestay</a>
             <a href="healing.html" class="button">Healing</a>
-            <a href="villa.html" class="button">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
+            <a href="villa.html" class="button active">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
+            <a href="healthy.html" class="button">Healthy</a>
         </div>
     </div>
 
     <footer>
         <p style="text-align: center; font-size: 0.5em; margin: 10px 0;">Web làm bởi: (+84.388771221)</p>
-        <a href="index.html" class="back">Quay lại trang chủ</a>
         <p>&copy; 2026 Kalynk An Tuệ. Tất cả quyền được bảo lưu.</p>
     </footer>
 </body>
