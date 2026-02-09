@@ -340,17 +340,12 @@ footer {
     
     /* Hide KALYNK_AN TUỆ text on mobile - now using mobile header instead */
     header > div:first-child {
-        display: none;
+        display: none !important;
     }
     
     /* Show mobile header on mobile */
     #mobile-header {
         display: flex !important;
-    }
-    
-    /* Hide navigation buttons in header on mobile */
-    header > div:first-child {
-        display: none !important;
     }
     
     /* Language switcher in #kham-pha section */
