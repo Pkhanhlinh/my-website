@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Villa Flamingo Đại Lải - Thuê villa cao cấp view hồ, 1-2 phòng ngủ, phù hợp cặp đôi và gia đình. Homestay nghỉ dưỡng gần Hà Nội">
-    <meta name="keywords" content="villa flamingo, villa đại lải, thuê villa gần hà nội, villa view hồ, villa cao cấp, nghỉ dưỡng flamingo resort">
+    <meta name="description" content="Tv.Xây dựng Homestay - Tư vấn thiết kế và xây dựng homestay, villa cao cấp tại Đại Lải. Dịch vụ xây dựng homestay gần Hà Nội">
+    <meta name="keywords" content="xây dựng homestay, thiết kế homestay, xây villa, xây dựng homestay gần hà nội, tư vấn xây homestay, thiết kế villa đại lải">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Villa Flamingo Đại Lải - Kalynk An Tuệ">
-    <meta property="og:description" content="Thuê villa cao cấp view hồ tại Flamingo Đại Lải, Vĩnh Phúc">
+    <meta property="og:title" content="Tv.Xây dựng Homestay - Kalynk An Tuệ">
+    <meta property="og:description" content="Tư vấn thiết kế và xây dựng homestay, villa cao cấp tại Đại Lải">
     <meta property="og:type" content="website">
-    <title>Quản lý Villa - Kalynk An Tuệ</title>
+    <title>Tv.Xây dựng Homestay - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
     <style>
@@ -24,53 +24,37 @@
                 display: contents !important;
             }
         }
-        /* Mobile styles for villa buttons - 2 rows of 4 buttons */
+        
+        /* Mobile styles */
         @media (max-width: 600px) {
-            #albums .villa-buttons-container {
+            #mobile-header {
                 display: flex !important;
-                flex-wrap: wrap !important;
-                justify-content: center !important;
+            }
+            header {
+                display: none;
+            }
+            .mobile-bottom-nav {
+                display: flex !important;
+            }
+            .buttons {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
                 gap: 10px !important;
-                width: 100% !important;
-            }
-            #albums .villa-row {
-                display: flex !important;
-                justify-content: center !important;
-                gap: 10px !important;
-                width: 100% !important;
-            }
-            #albums .villa-row .button {
-                flex: 0 0 calc(25% - 8px) !important;
-                min-width: 70px !important;
-                max-width: 90px !important;
-                font-size: 0.9em !important;
-                padding: 10px 5px !important;
-                text-align: center !important;
-            }
-            /* Mobile styles for album navigation */
-            #album-navigation .album-grid {
-                display: flex !important;
-                flex-direction: row !important;
-                justify-content: center !important;
-                flex-wrap: wrap !important;
-                gap: 8px !important;
-                max-width: 100% !important;
                 padding: 10px !important;
             }
-            #album-navigation .album-item {
-                flex: 0 0 auto !important;
+            .buttons .button {
+                font-size: 0.85em !important;
+                padding: 12px 8px !important;
             }
-            #album-navigation .album-cover {
-                width: 70px !important;
-                height: 70px !important;
+            #kham-pha h2 {
+                font-size: 1em !important;
             }
-            #album-navigation .album-cover img {
-                width: 55px !important;
-                height: 55px !important;
+            #kham-pha p:last-of-type {
+                font-size: 1.5em !important;
             }
-            #album-navigation .album-item span {
-                font-size: 0.65em !important;
-                margin-top: 4px !important;
+            .flow-mindmap .branches {
+                flex-direction: column !important;
+                gap: 15px !important;
             }
         }
     </style>
@@ -83,8 +67,8 @@
                 <a href="index.html" class="button">Owner</a>
                 <a href="homestay.html" class="button">Homestay</a>
                 <a href="healing.html" class="button">Healing</a>
-                <a href="villa.html" class="button active">Flamingo Resort</a>
-                <a href="xay-dung-homestay.html" class="button">Tv.Xây dựng<br>Homestay</a>
+                <a href="villa.html" class="button">Flamingo Resort</a>
+                <a href="xay-dung-homestay.html" class="button active">Tv.Xây dựng<br>Homestay</a>
                 <a href="healthy.html" class="button">Healthy</a>
             </div>
         </div>
@@ -95,14 +79,14 @@
         <div style="font-size: 3em; font-weight: 900; font-family: 'Times New Roman', 'Arial Unicode MS', Arial, sans-serif; text-transform: uppercase; color: white; line-height: 1.7em; text-align: left; background-color: #4CAF50; height: 1.7em; display: flex; align-items: center; padding-left: 10px;">KALYNK_AN TUỆ</div>
         <div style="height: 1px; background-image: url('hinh-nen-cay-xanh-2.png'); background-size: cover; background-position: center;"></div>
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 5px 10px; background-color: #4CAF50; overflow-x: auto; white-space: nowrap;">
-            <span style="font-size: 1.2em; color: white; font-weight: bold;">FLAMINGO ĐẠI LẢI 5*</span>
+            <span style="font-size: 1.2em; color: white; font-weight: bold;">TƯ VẤN - XÂY DỰNG - VẬN HÀNH - HOMESTAY</span>
         </div>
     </div>
 
     <section id="kham-pha">
         <h2 style="font-size: 0.98em;">Các lĩnh vực mà Kalynk An Tuệ có thể kết nối cùng bạn</h2>
         <small style="font-size: 0.8em; margin-top: -10px; display: block;">(whatsApp zalo: 0777998858 -0911858998 - 0966758689)</small>
-        <div class="buttons">
+        <div class="buttons" style="margin-top: 15px;">
             <a href="homestay.html" class="button">OM.VIBE RETREAT MIEU LAKE<br><span style="font-size: 0.7em;">Homestay Hồ Miễu - Thân - Tâm - Trí</span></a>
             <a href="healing.html" class="button">THIỀN THỤ ĐỘNG<br><span style="font-size: 0.7em;">Bằng Âm Thanh Chữa Lành</span></a>
             <a href="villa.html" class="button">FLAMINGO RESORT<br><span style="font-size: 0.7em;">Booking Villa Chính Chủ</span></a>
@@ -112,67 +96,65 @@
             <a href="xay-dung-homestay.html" class="button">TV.XÂY DỰNG HOMESTAY<br><span style="font-size: 0.7em;">Tư Vấn & Vận Hành</span></a>
         </div>
         <p style="text-align: center; margin-top: 20px;">
-            <a href="https://www.facebook.com/thuebietthudailai" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> |
+            <a href="https://www.facebook.com/mina0984/" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> |
             <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">TikTok</a> |
             <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">YouTube</a>
         </p>
-        <p style="text-align: center; font-size: 35px; font-weight: bold; color: white; margin-top: 0; margin-bottom: 30px;">FLAMINGO ĐẠI LẢI 5*</p>
+        <p style="text-align: center; font-size: 35px; font-weight: bold; color: white; margin-top: 0; margin-bottom: 30px;">TƯ VẤN XÂY DỰNG VÀ VẬN HÀNH KHU NGHỈ DƯỠNG - HOMESTAY</p>
     </section>
 
     <section id="gioi-thieu">
-        <h2>Cho thuê Villa Flamingo Chính Chủ <a href="#albums" style="color: yellow; font-size: 0.4em;">Xem Villa</a></h2>
+        <h2>Dịch Vụ Tư Vấn Xây Dựng Và Vận Hành Khu Nghỉ Dưỡng - Homestay</h2>
         <div style="text-align: center; margin: 20px 0;">
             <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
                 <iframe src="https://www.youtube.com/embed/8W7qOvHXAmY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <p>🌿Flamingo Đại Lải Resort là khu nghỉ dưỡng cao cấp chuẩn 5 sao, tọa lạc tại Xã Ngọc Thanh, TP. Phúc Yên, Vĩnh Phúc (khoảng 45-60 phút lái xe từ trung tâm Hà Nội).<br>🌿Đây là điểm đến lý tưởng cho những ai yêu thích không gian xanh và nghệ thuật kiến trúc độc bản.<br>🌿Quy mô: Rộng 123 ha, nằm cạnh hồ Đại Lải rộng lớn, các cánh rừng thông và những ngọn đồi thoải.<br>🌿Danh hiệu: Lọt Top 10 resort đẹp nhất thế giới và sở hữu hơn 60 giải thưởng kiến trúc/du lịch quốc tế.</p>
+        <p>🌿Chúng tôi cung cấp dịch vụ tư vấn thiết kế và xây dựng homestay, villa cao cấp tại khu vực Đại Lải, Vĩnh Phúc và các vùng lân cận Hà Nội.<br>🌿Với nhiều năm kinh nghiệm trong lĩnh vực bất động sản nghỉ dưỡng, chúng tôi giúp bạn hiện thực hóa ý tưởng về một khu nghỉ dưỡng đẳng cấp.<br>🌿Từ khâu quy hoạch, thiết kế kiến trúc, thi công xây dựng đến vận hành và quản lý sau khi hoàn thành.</p>
 
                 <div class="flow-mindmap">
-                    <div class="center">Flamingo Đại Lải</div>
+                    <div class="center">Xây Dựng Homestay</div>
                     <div class="branches">
                         <div class="branch">
                             <div class="arrow">→</div>
-                            <div class="node">Phòng ốc <a href="#albums">Xem</a></div>
+                            <div class="node">Tư Vấn Thiết Kế</div>
                         </div>
                         <div class="branch">
                             <div class="arrow">→</div>
-                            <div class="node">Tiện ích: <a href="#">Xem</a></div>
+                            <div class="node">Thi Công Xây Dựng</div>
                         </div>
                         <div class="branch">
                             <div class="arrow">→</div>
-                            <div class="node">Booking: 0911858998 - 0777998858 - 0966758689 <a href="#">Airbnb</a> <a href="#">Fanpage</a></div>
+                            <div class="node">Liên hệ: 0911858998 - 0777998858 - 0966758689</div>
                         </div>
                     </div>
                 </div>
     </section>
 
     <section id="albums">
-        <h2>Booking Villa Flamingo Đại Lải Chính Chủ</h2>
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
         <div class="villa-buttons-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
             <div class="villa-row">
-                <a href="villa-1p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 1p</a>
-                <a href="villa-2p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 2p</a>
-                <a href="villa-3p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 3p</a>
-                <a href="villa-4p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 4p</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Tư Vấn Phong Thủy</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Thiết Kế Kiến Trúc</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Thiết Kế Nội Thất</a>
             </div>
             <div class="villa-row">
-                <a href="villa-5p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 5p</a>
-                <a href="villa-6p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 6p</a>
-                <a href="villa-7p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 7p</a>
-                <a href="villa-8p.html" class="button" style="width: auto; height: auto; white-space: nowrap;">Villa 8p</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Thi Công Xây Dựng</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Vận Hành Khu Nghỉ Dưỡng</a>
+                <a href="#" class="button" style="width: auto; height: auto; white-space: nowrap;">Hỗ Trợ Pháp Lý</a>
             </div>
         </div>
     </section>
 
-    <!-- Mobile Bottom Navigation - 5 buttons -->
-    <div class="mobile-bottom-nav">
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav" style="display: none;">
         <div class="nav-buttons">
             <a href="index.html" class="button">Owner</a>
             <a href="homestay.html" class="button">Homestay</a>
             <a href="healing.html" class="button">Healing</a>
-            <a href="villa.html" class="button active">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
-            <a href="xay-dung-homestay.html" class="button">Tv.Xây dựng<br><span style="font-size: 0.7em;">Homestay</span></a>
+            <a href="villa.html" class="button">Flamingo<br><span style="font-size: 0.7em;">Resort</span></a>
+            <a href="xay-dung-homestay.html" class="button active">Tv.Xây dựng<br><span style="font-size: 0.7em;">Homestay</span></a>
             <a href="healthy.html" class="button">Healthy</a>
         </div>
     </div>
@@ -180,7 +162,6 @@
     <footer>
         <p style="text-align: center; font-size: 0.5em; margin: 10px 0;">Web làm bởi: (+84.388771221)</p>
         <a href="index.html" class="back">Quay lại trang chủ</a>
-        <p>&copy; 2026 Kalynk An Tuệ. Tất cả quyền được bảo lưu.</p>
     </footer>
 </body>
 </html>
