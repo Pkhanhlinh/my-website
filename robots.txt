@@ -1,0 +1,11 @@
+# Robots.txt for Kalynk An Tuệ
+# https://linhkhanh.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://linhkhanh.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
