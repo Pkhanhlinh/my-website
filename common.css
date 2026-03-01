@@ -146,6 +146,17 @@ section {
     align-items: center;
 }
 
+/* Button spanning 2 columns */
+.button-width-2 {
+    flex: 2;
+}
+
+@media screen and (max-width: 600px) {
+    #kham-pha .buttons .button-width-2 {
+        grid-column: span 2;
+    }
+}
+
 .button:hover {
     background-color: #45a049;
 }
