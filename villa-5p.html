@@ -6,6 +6,39 @@
     <title>Villa 5p - Kalynk An Tuệ</title>
     <link rel="stylesheet" href="common.css">
     <script src="common.js"></script>
+    <style>
+        /* Mobile styles for album icons */
+        @media (max-width: 600px) {
+            #villa-albums .album-grid {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+                max-width: 100% !important;
+                padding: 10px !important;
+            }
+            #villa-albums .album-item {
+                flex: 0 0 auto !important;
+            }
+            #villa-albums .album-cover {
+                width: 70px !important;
+                height: 70px !important;
+            }
+            #villa-albums .album-cover img {
+                width: 55px !important;
+                height: 55px !important;
+            }
+            #villa-albums .album-cover svg {
+                width: 25px !important;
+                height: 25px !important;
+            }
+            #villa-albums .album-item span {
+                font-size: 0.65em !important;
+                margin-top: 4px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -53,8 +86,68 @@
     </section>
 
     <section id="villa-content">
-        <h2>Villa 5p</h2>
-        <!-- Nội dung Villa 5p - Viết nội dung vào đây -->
+        <h2>🌿Villa năm phòng ngủ dành cho gia đình hoặc nhóm bạn🌿</h2>
+        
+        <!-- Villa Albums Section -->
+        <section id="villa-albums" style="padding: 20px;">
+            <div class="album-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 600px; margin: 0 auto;">
+                <a href="villa-album25.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/5p/B3/z7357722187962_6c8680e0cb67fb525febda9fc3e3adf6.jpg" alt="B3" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">B3</span>
+                </a>
+                <a href="villa-album26.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/5p/b105/z7576508980933_455aab7e85e54e83a52634e74347682e.jpg" alt="b105" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">b105</span>
+                </a>
+                <a href="villa-album27.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/5p/B129a/z7357711545587_1d55b5325367eb8fa0c4880a26701a5d.jpg" alt="B129a" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">B129a</span>
+                </a>
+                <a href="villa-album28.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/5p/H48A/z7357802626964_bcf49c5eeb50c2d7bff138e197503754.jpg" alt="H48A" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">H48A</span>
+                </a>
+                <a href="villa-album29.html" class="album-item" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white;">
+                    <div class="album-cover" style="width: 120px; height: 120px; background-color: #4CAF50; border-radius: 10px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <img src="flamingo/5p/T135/z7297174702995_43d36ea0d70446e59f6fd316b1a0eb65.jpg" alt="T135" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px; position: absolute; top: 5px; left: 5px;" onerror="this.style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px" style="opacity: 0.7;">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+                            <path d="M4 18h16v2H4z" fill="#4CAF50"/>
+                            <path d="M8 10h8v8H8z" fill="white" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <span style="margin-top: 8px; font-size: 0.9em; text-align: center;">T135</span>
+                </a>
+            </div>
+        </section>
     </section>
 
     <!-- Booking Villa Section -->
