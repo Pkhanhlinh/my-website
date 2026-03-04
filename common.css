@@ -1349,4 +1349,10 @@ a.back:hover {
     .desktop-only {
         display: none !important;
     }
+    /* Center contact info on mobile */
+    #kham-pha small {
+        text-align: center !important;
+        font-size: 0.7em;
+        margin-top: -10px;
+    }
 }
